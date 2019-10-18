@@ -1,0 +1,31 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    image:
+        label: graker.photoalbums::lang.plugin.photo
+        type: fileupload
+        mode: image
+        imageWidth: 320
+        imageHeight: 240
+        span: right
+
+    title:
+        label: graker.photoalbums::lang.plugin.title_label
+        span: left
+        placeholder: graker.photoalbums::lang.plugin.title_placeholder_photo
+        span: left
+
+    album:
+        label: graker.photoalbums::lang.plugin.album
+        type: relation
+        nameFrom: title
+        emptyOption: graker.photoalbums::lang.plugin.not_selected
+        span: left
+
+    description:
+        label: graker.photoalbums::lang.plugin.photo_description
+        type: richeditor
+        size: large

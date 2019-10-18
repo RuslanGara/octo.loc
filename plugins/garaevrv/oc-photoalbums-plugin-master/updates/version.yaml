@@ -1,0 +1,32 @@
+1.0.1: First version of PhotoAlbums
+1.0.2:
+    - Update with migrations to create albums and photos table
+    - create_albums_table.php
+    - create_photos_table.php
+1.1.0:
+    - Add ability to select front photo for album from the interface
+    - add_album_front.php
+1.2.0:
+    - Added ability to reorder photos in the album
+    - add_sort_order_field.php
+1.2.1:
+    - Fill default sort_order values for existing photos
+    - update_sort_order_on_existing_photos.php
+1.2.2:
+    - Sqlite support for RandomPhotos component
+1.2.3:
+    - Added helper method to get album's cover photo
+1.2.4:
+    - Fix for album front photo eager loading
+1.2.5:
+    - Fix for photos count in only_full_group_by sql mode
+1.3.0:
+    - New dialog to insert photos into blog posts
+1.4.0:
+    - Integration with RainLab.Pages to use Albums and Photos in Menu Items (and Sitemap)
+1.4.1:
+    - Improved layout of Photo form (thanks to gergo85)
+    - Improved lang.php strings (thanks to gergo85)
+    - Localized Menu Item types
+1.4.2:
+    - Fixed second insert photo icon from occuring in blog post form

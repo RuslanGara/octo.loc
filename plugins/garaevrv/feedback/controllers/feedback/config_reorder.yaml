@@ -1,0 +1,4 @@
+title: FeedBack
+modelClass: Garaevrv\Feedback\Models\FeedBack
+toolbar:
+    buttons: reorder_toolbar

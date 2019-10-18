@@ -1,0 +1,12 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+photos:
+    label: graker.photoalbums::lang.plugin.photo
+    manage:
+        form: $/graker/photoalbums/models/photo/fields.yaml
+        list: $/graker/photoalbums/models/photo/columns.yaml
+    view:
+        list: $/graker/photoalbums/models/photo/columns.yaml
+        toolbarPartial: relation_toolbar

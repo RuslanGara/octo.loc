@@ -1,0 +1,33 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    id:
+        label: graker.photoalbums::lang.plugin.photo
+        type: image
+
+
+    title:
+        label: graker.photoalbums::lang.plugin.title_label
+        searchable: true
+
+    front:
+        label: graker.photoalbums::lang.plugin.front_label
+        relation: album
+        select: front_id
+        type: is_front
+
+    album:
+        label: graker.photoalbums::lang.plugin.album
+        valueFrom: title
+        searchable: true
+        relation: album
+
+    created_at:
+        label: graker.photoalbums::lang.plugin.created_label
+        type: date
+
+    updated_at:
+        label: graker.photoalbums::lang.plugin.updated_label
+        type: date

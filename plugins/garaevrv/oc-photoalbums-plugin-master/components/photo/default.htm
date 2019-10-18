@@ -1,0 +1,36 @@
+{% set photo = __SELF__.photo %}
+
+{% if photo.title %}
+    <h1>{{ photo.title }}</h1>
+{% endif %}
+<div class="photo-image row">
+    <div class="col-xs-12">
+        <img
+                data-src="{{ photo.image.filename }}"
+                src="{{ photo.image.path }}"
+                alt="{{ photo.title }}"
+                title="{{ photo.title }}"
+                style="max-width: 100%" />
+    </div>
+</div>
+<div class="photo-description row">
+    <div class="col-xs-12">
+        {{ photo.created_at|date('Y/m/d') }}
+        <a href="{{ photo.album.url }}">{{ photo.album.title }}</a>
+        {% if photo.description %}
+            {{ photo.description | raw }}
+        {% endif %}
+    </div>
+    <div class="text-center col-xs-12">
+        {% if photo.previous %}
+            <a href="{{ photo.previous.url }}">Previous photo</a>
+        {% else %}
+            <span class="disabled">Previous photo</span>
+        {% endif %}
+        {% if photo.next %}
+            <a href="{{ photo.next.url }}">Next photo</a>
+        {% else %}
+            <span class="disabled">Next photo</span>
+        {% endif %}
+    </div>
+</div>

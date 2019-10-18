@@ -1,0 +1,26 @@
+# ===================================
+#  Field Definitions
+# ===================================
+
+fields:
+    site_name:
+        label: Site name
+        comment: The website name as it should appear on the front-end
+        default: October CMS
+        span: auto
+
+    site_motto:
+        label: Site motto
+        comment: A short statement about the website.
+        default: Get back to basics
+        span: auto
+
+    facebook_url:
+        label: Facebook URL
+        span: auto
+        default: https://www.facebook.com/
+
+    twitter_url:
+        label: Twitter URL
+        span: auto
+        default: https://www.twitter.com/

@@ -1,0 +1,11 @@
+plugin:
+    name: 'garaevrv.feedback::lang.plugin.name'
+    description: 'garaevrv.feedback::lang.plugin.description'
+    author: garaevRV
+    icon: oc-icon-adjust
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: 'Menu Item'
+        url: garaevrv/feedback/feedback
+        icon: icon-adn

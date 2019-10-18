@@ -1,0 +1,28 @@
+1571394175a:1:{s:13:"site/meta.htm";a:5:{s:8:"fileName";s:13:"site/meta.htm";s:7:"content";s:640:"<meta charset="utf-8">
+<title>{{ this.page.title }} - {{ this.theme.site_name }}</title>
+<meta name="description" content="{{ this.page.meta_description }}">
+<meta name="title" content="{{ this.page.meta_title }}">
+<meta name="author" content="OctoberCMS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="OctoberCMS">
+<link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+<link href="{{ [
+    '@framework.extras',
+    'assets/less/vendor.less'
+]|theme }}" rel="stylesheet">
+<link href="{{ ['assets/less/theme.less']|theme }}" rel="stylesheet">
+{% styles %}
+";s:5:"mtime";i:1567418069;s:6:"markup";s:639:"<meta charset="utf-8">
+<title>{{ this.page.title }} - {{ this.theme.site_name }}</title>
+<meta name="description" content="{{ this.page.meta_description }}">
+<meta name="title" content="{{ this.page.meta_title }}">
+<meta name="author" content="OctoberCMS">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="OctoberCMS">
+<link rel="icon" type="image/png" href="{{ 'assets/images/october.png'|theme }}">
+<link href="{{ [
+    '@framework.extras',
+    'assets/less/vendor.less'
+]|theme }}" rel="stylesheet">
+<link href="{{ ['assets/less/theme.less']|theme }}" rel="stylesheet">
+{% styles %}";s:4:"code";N;}}

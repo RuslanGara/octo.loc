@@ -1,0 +1,24 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    title:
+        label: graker.photoalbums::lang.plugin.title_label
+        span: left
+        placeholder: graker.photoalbums::lang.plugin.title_placeholder_album
+
+    slug:
+        label: graker.photoalbums::lang.plugin.slug_label
+        span: right
+        placeholder: graker.photoalbums::lang.plugin.slug_placeholder_album
+        preset:
+            field: title
+            type: slug
+
+    description:
+        label: graker.photoalbums::lang.plugin.description_label
+        type: richeditor
+        size: large
+

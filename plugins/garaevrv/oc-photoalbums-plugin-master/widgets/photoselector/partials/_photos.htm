@@ -1,0 +1,26 @@
+<div id="photosList" class="row" data-request-data="<?= $album->id ?>">
+    <h4 class="text-center"><?= $album->title; ?></h4>
+    <?php foreach ($album->photos as $photo) : ?>
+    <div class="col-xs-12 col-sm-4">
+        <div class="photo-links-wrapper">
+            <p class="text-center">
+                <a href="javascript: ;" class="photo-link image-link" data-request-data="<?= $photo->code ?>">
+                    <img src="<?= $photo->thumb; ?>" />
+                </a>
+            </p>
+            <p class="text-center">
+                <a href="javascript: ;" class="photo-link title-link" data-request-data="<?= $photo->code ?>">
+                    <?php if ($photo->title) : ?>
+                        <?= $photo->title; ?>
+                    <?php else: ?>
+                        &nbsp;
+                    <?php endif; ?>
+                </a>
+            </p>
+        </div>
+    </div>
+    <?php endforeach; ?>
+    <div class="col-xs-11 text-right">
+        <a href="javascript: ;" class="back-to-albums"><?= e(trans('graker.photoalbums::lang.plugin.back_to_albums')) ?></a>
+    </div>
+</div>

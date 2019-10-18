@@ -1,0 +1,29 @@
+fields:
+    name:
+        label: Название
+        span: auto
+        type: text
+tabs:
+    fields:
+        phone:
+            label: 'Модель телефона'
+            span: auto
+            type: text
+            tab: 'Tab 1'
+secondaryTabs:
+    fields:
+        photo:
+            label: 'File upload'
+            mode: file
+            useCaption: true
+            thumbOptions:
+                mode: crop
+                extension: auto
+            span: auto
+            type: fileupload
+            tab: 'Tab 1'
+        status:
+            label: Switch
+            span: auto
+            type: switch
+            tab: 'Tab 1'

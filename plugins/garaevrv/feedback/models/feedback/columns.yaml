@@ -1,0 +1,22 @@
+columns:
+    id:
+        label: photo
+        type: image
+    name:
+        label: name
+        type: text
+    phone:
+        label: phone
+        type: text
+    created_at:
+        label: created_at
+        type: datetime
+    updated_at:
+        label: updated_at
+        type: datetime
+    deleted_at:
+        label: deleted_at
+        type: datetime
+    status:
+        label: Enabled
+        type: switch

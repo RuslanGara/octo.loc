@@ -1,0 +1,11 @@
+name: FeedBack
+modelClass: Garaevrv\Feedback\Models\FeedBack
+form: $/garaevrv/feedback/models/feedback/fields.yaml
+defaultRedirect: garaevrv/feedback/feedback
+create:
+    redirect: 'garaevrv/feedback/feedback/update/:id'
+    redirectClose: garaevrv/feedback/feedback
+update:
+    redirect: garaevrv/feedback/feedback
+    redirectClose: garaevrv/feedback/feedback
+preview: {  }

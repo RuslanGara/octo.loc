@@ -1,0 +1,16 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: graker.photoalbums::lang.plugin.title_label
+        searchable: true
+
+    created_at:
+        label: graker.photoalbums::lang.plugin.created_label
+        type: date
+
+    updated_at:
+        label: graker.photoalbums::lang.plugin.updated_label
+        type: date

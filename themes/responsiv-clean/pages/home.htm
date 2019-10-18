@@ -1,0 +1,27 @@
+title = "Welcome"
+url = "/"
+layout = "default"
+is_hidden = 0
+==
+<?php
+public function onPagePosts()
+{
+    $this->blogPosts->setProperty('pageNumber', post('page'));
+    $this->pageCycle();
+}
+?>
+==
+<div
+    id="homePosts"
+    class="post-list home-posts">
+    {% partial 'home/posts' %}
+</div>
+<div
+    class="text-center"
+    data-control="auto-pager"
+    data-request="onPagePosts"
+    data-request-update="'home/posts': '@#homePosts'"
+    data-current-page="1"
+    data-last-page="{{ posts.lastPage }}">
+    <a class="text-muted oc-loading">Fetching posts..</a>
+</div>

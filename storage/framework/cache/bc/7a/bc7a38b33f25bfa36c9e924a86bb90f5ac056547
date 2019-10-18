@@ -1,0 +1,9 @@
+1571394175a:1:{s:12:"blog/rss.htm";a:8:{s:8:"fileName";s:12:"blog/rss.htm";s:7:"content";s:145:"title = "RSS Feed"
+url = "/blog/rss.xml"
+
+[blogRssFeed]
+blogPage = "home"
+postPage = "blog/post"
+==
+<!-- This markup will never be displayed -->
+";s:5:"mtime";i:1567418068;s:6:"markup";s:44:"<!-- This markup will never be displayed -->";s:4:"code";N;s:5:"title";s:8:"RSS Feed";s:3:"url";s:13:"/blog/rss.xml";s:11:"blogRssFeed";a:2:{s:8:"blogPage";s:4:"home";s:8:"postPage";s:9:"blog/post";}}}

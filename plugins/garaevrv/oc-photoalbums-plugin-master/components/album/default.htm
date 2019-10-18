@@ -1,0 +1,46 @@
+{% set album = __SELF__.album %}
+
+<h1>{{ album.title }}</h1>
+
+{% if album.description %}
+    <div class="album-description row">
+        <div class="col-xs-12">
+            {{ album.description|raw }}
+        </div>
+    </div>
+{% endif %}
+
+<div class="album-photos row">
+    {% for photo in album.photos %}
+        <div class="photo col-xs-12 col-sm-6 col-md-4 col-lg-3">
+            <a href="{{ photo.url }}"><img
+                    data-src="{{ photo.thumb }}"
+                    src="{{ photo.thumb }}"
+                    alt="{{ photo.title }}"
+                    title="{{ photo.title }}"
+                    style="max-width: 100%" />
+            </a>
+            <a href="{{ photo.url }}"><strong>{{ photo.title }}</strong></a>
+        </div>
+    {% else %}
+        <div class="col-xs-12 no-data">Album doesn't have any photos yet</div>
+    {% endfor %}
+</div>
+
+{% if __SELF__.lastPage > 1 %}
+<ul class="pagination">
+    {% if __SELF__.currentPage > 1 %}
+    <li><a href="{{ this.page.baseFileName|page }}?page={{ __SELF__.currentPage-1 }}">&larr; Prev</a></li>
+    {% endif %}
+
+    {% for page in 1..__SELF__.lastPage %}
+    <li class="{{ __SELF__.currentPage == page ? 'active' : null }}">
+        <a href="{{ this.page.baseFileName|page }}?page={{ page }}">{{ page }}</a>
+    </li>
+    {% endfor %}
+
+    {% if __SELF__.lastPage > __SELF__.currentPage %}
+    <li><a href="{{ this.page.baseFileName|page }}?page={{ __SELF__.currentPage+1 }}">Next &rarr;</a></li>
+    {% endif %}
+</ul>
+{% endif %}

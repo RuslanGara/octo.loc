@@ -1,0 +1,44 @@
+1571394175a:1:{s:8:"home.htm";a:9:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:596:"title = "Welcome"
+url = "/"
+layout = "default"
+is_hidden = 0
+==
+<?php
+public function onPagePosts()
+{
+    $this->blogPosts->setProperty('pageNumber', post('page'));
+    $this->pageCycle();
+}
+?>
+==
+<div
+    id="homePosts"
+    class="post-list home-posts">
+    {% partial 'home/posts' %}
+</div>
+<div
+    class="text-center"
+    data-control="auto-pager"
+    data-request="onPagePosts"
+    data-request-update="'home/posts': '@#homePosts'"
+    data-current-page="1"
+    data-last-page="{{ posts.lastPage }}">
+    <a class="text-muted oc-loading">Fetching posts..</a>
+</div>";s:5:"mtime";i:1571375773;s:6:"markup";s:386:"<div
+    id="homePosts"
+    class="post-list home-posts">
+    {% partial 'home/posts' %}
+</div>
+<div
+    class="text-center"
+    data-control="auto-pager"
+    data-request="onPagePosts"
+    data-request-update="'home/posts': '@#homePosts'"
+    data-current-page="1"
+    data-last-page="{{ posts.lastPage }}">
+    <a class="text-muted oc-loading">Fetching posts..</a>
+</div>";s:4:"code";s:124:"public function onPagePosts()
+{
+    $this->blogPosts->setProperty('pageNumber', post('page'));
+    $this->pageCycle();
+}";s:5:"title";s:7:"Welcome";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

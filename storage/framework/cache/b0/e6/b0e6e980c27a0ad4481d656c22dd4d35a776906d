@@ -1,0 +1,16 @@
+1571394175a:1:{s:16:"site/scripts.htm";a:5:{s:8:"fileName";s:16:"site/scripts.htm";s:7:"content";s:177:"<script src="{{ [
+    '@jquery',
+    '@framework',
+    '@framework.extras',
+    'assets/vendor/bootstrap.js',
+    'assets/javascript/app.js'
+]|theme }}"></script>
+{% scripts %}
+";s:5:"mtime";i:1567418069;s:6:"markup";s:176:"<script src="{{ [
+    '@jquery',
+    '@framework',
+    '@framework.extras',
+    'assets/vendor/bootstrap.js',
+    'assets/javascript/app.js'
+]|theme }}"></script>
+{% scripts %}";s:4:"code";N;}}
